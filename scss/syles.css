@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+:root {
+  /** Primary Colors **/
+  --primary-clr-darkBlue: hsl(233, 26%, 24%);
+  --primary-clr-lime: hsl(136, 65%, 51%);
+  --primary-clr-cyan: hsl(192, 70%, 51%);
+  /** Neutral Colors **/
+  --neutral-clr-grayBlue: hsl(233, 8%, 62%);
+  --neutral-clr-lightGrayBlue: hsl(220, 16%, 96%);
+  --neutral-clr-veryLightGray: hsl(0, 0%, 98%);
+  --neutral-clr-white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  background-color: var(--neutral-clr-veryLightGray);
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-clr-lime)), to(var(--primary-clr-cyan)));
+  background: linear-gradient(to right, var(--primary-clr-lime), var(--primary-clr-cyan));
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 100vh;
+}
+
+.nav-bar-container {
+  width: 100%;
+  background-color: var(--neutral-clr-white);
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  list-style: none;
+}
+
+.nav-bar .nav-links .nav-link {
+  color: var(--neutral-clr-grayBlue);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.nav-links li + li {
+  margin-left: 1rem;
+}
+
+.hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .call-to-action {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.hero-section .hero-title {
+  font-size: 50px;
+  font-weight: 300;
+  color: var(--primary-clr-darkBlue);
+}
+/*# sourceMappingURL=syles.css.map */
