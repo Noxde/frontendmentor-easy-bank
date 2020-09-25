@@ -22,6 +22,7 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   background-color: var(--neutral-clr-veryLightGray);
+  overflow-x: hidden;
 }
 
 img {
@@ -31,6 +32,12 @@ img {
 p {
   line-height: 1.5;
   color: var(--neutral-clr-grayBlue);
+}
+
+.title {
+  color: var(--primary-clr-darkBlue);
+  font-weight: 300;
+  font-size: 2em;
 }
 
 .logo {
@@ -57,11 +64,14 @@ p {
 }
 
 .nav-bar-container {
+  position: relative;
+  z-index: 9999;
   width: 100%;
   background-color: var(--neutral-clr-white);
 }
 
 .nav-bar {
+  position: relative;
   display: flex;
   padding: 2rem 0;
   justify-content: space-between;
@@ -90,11 +100,10 @@ p {
 
 .hero-section {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   background-image: url(/images/bg-intro-desktop.svg);
   background-position: 220% 70%;
   background-size: 80%;
-  overflow: hidden;
   background-repeat: no-repeat;
   grid-column: 1 / 6;
   display: flex;
@@ -111,7 +120,7 @@ p {
     width: max-content;
   }
   .hero-p {
-    max-width: 25em;
+    max-width: 23em;
     margin: 1rem 0;
   }
   .hero-title {
@@ -124,12 +133,38 @@ p {
 
 .features-container {
   position: relative;
-  z-index: 1;
+  z-index: 0;
+  display: flex;
+  align-items: center;
   grid-column: 1 / 6;
   background-color: var(--neutral-clr-lightGrayBlue);
+  .features {
+    display: flex;
+    .feature {
+      margin-right: 2rem;
+    }
+    .feature:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .feature-title {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--primary-clr-darkBlue);
+  }
+  .feature-icon {
+    width: 100px;
+    margin: 2rem 0;
+  }
+  .fetures-p {
+    max-width: 50rem;
+    margin: 1.5rem 0;
+  }
 }
 
 .articles {
+  background-color: var(--neutral-clr-veryLightGray);
   grid-column: 1 / 6;
 }
 

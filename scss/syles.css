@@ -22,6 +22,7 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
   background-color: var(--neutral-clr-veryLightGray);
+  overflow-x: hidden;
 }
 
 img {
@@ -31,6 +32,12 @@ img {
 p {
   line-height: 1.5;
   color: var(--neutral-clr-grayBlue);
+}
+
+.title {
+  color: var(--primary-clr-darkBlue);
+  font-weight: 300;
+  font-size: 2em;
 }
 
 .logo {
@@ -54,11 +61,14 @@ p {
 }
 
 .nav-bar-container {
+  position: relative;
+  z-index: 9999;
   width: 100%;
   background-color: var(--neutral-clr-white);
 }
 
 .nav-bar {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,11 +110,10 @@ p {
 
 .hero-section {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   background-image: url(/images/bg-intro-desktop.svg);
   background-position: 220% 70%;
   background-size: 80%;
-  overflow: hidden;
   background-repeat: no-repeat;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
@@ -135,7 +144,7 @@ p {
 }
 
 .hero-section .hero-p {
-  max-width: 25em;
+  max-width: 23em;
   margin: 1rem 0;
 }
 
@@ -148,14 +157,52 @@ p {
 
 .features-container {
   position: relative;
-  z-index: 1;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1 / 6;
   background-color: var(--neutral-clr-lightGrayBlue);
 }
 
+.features-container .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features-container .features .feature {
+  margin-right: 2rem;
+}
+
+.features-container .features .feature:last-of-type {
+  margin-right: 0;
+}
+
+.features-container .feature-title {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--primary-clr-darkBlue);
+}
+
+.features-container .feature-icon {
+  width: 100px;
+  margin: 2rem 0;
+}
+
+.features-container .fetures-p {
+  max-width: 50rem;
+  margin: 1.5rem 0;
+}
+
 .articles {
+  background-color: var(--neutral-clr-veryLightGray);
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1 / 6;
