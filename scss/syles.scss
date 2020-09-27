@@ -168,6 +168,26 @@ p {
   grid-column: 1 / 6;
 }
 
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--neutral-clr-veryLightGray);
+  .articles-title {
+    margin-bottom: 3rem;
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    .card {
+      background-color: var(--neutral-clr-white);
+    }
+    .card-image {
+      width: 200px;
+    }
+  }
+}
+
 footer {
   width: 100%;
   background-color: var(--primary-clr-darkBlue);
