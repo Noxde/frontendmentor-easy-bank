@@ -178,14 +178,59 @@ p {
   }
   .cards {
     display: flex;
-    align-items: center;
-    .card {
-      background-color: var(--neutral-clr-white);
-    }
-    .card-image {
-      width: 200px;
+    .card:last-of-type {
+      margin-right: 0;
     }
   }
+
+  .card {
+    background-color: var(--neutral-clr-white);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 1rem;
+    height: 10%;
+    font-size: 15px;
+    .card-content {
+      padding: 1.5rem;
+    }
+    .card-title {
+      color: var(--primary-clr-darkBlue);
+      font-weight: 300;
+      margin: 0.5rem 0;
+    }
+
+    .card-author {
+      font-size: 12px;
+    }
+  }
+  .card-image-1,
+  .card-image-2,
+  .card-image-3,
+  .card-image-4 {
+    overflow: hidden;
+    height: 200px;
+  }
+}
+
+.card-image-1 {
+  background-image: url(/images/image-currency.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.card-image-2 {
+  background-image: url(/images/image-restaurant.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.card-image-3 {
+  background-image: url(/images/image-plane.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.card-image-4 {
+  background-image: url(/images/image-confetti.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
 footer {
