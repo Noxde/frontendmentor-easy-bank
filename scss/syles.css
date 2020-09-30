@@ -72,7 +72,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem 0;
+  height: 90px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -86,13 +86,53 @@ p {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
+}
+
+.nav-bar .nav-links li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  position: relative;
 }
 
 .nav-bar .nav-links .nav-link {
   color: var(--neutral-clr-grayBlue);
   text-decoration: none;
   font-weight: 300;
+}
+
+.nav-bar .nav-links li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  width: 100%;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-clr-lime)), to(var(--primary-clr-cyan)));
+  background: linear-gradient(to right, var(--primary-clr-lime), var(--primary-clr-cyan));
+  -webkit-transition: -webkit-transform 150ms ease;
+  transition: -webkit-transform 150ms ease;
+  transition: transform 150ms ease;
+  transition: transform 150ms ease, -webkit-transform 150ms ease;
+}
+
+.nav-bar .nav-links li:hover::after {
+  -webkit-transform: scaleX(100%);
+          transform: scaleX(100%);
+  -webkit-transition: -webkit-transform 150ms ease;
+  transition: -webkit-transform 150ms ease;
+  transition: transform 150ms ease;
+  transition: transform 150ms ease, -webkit-transform 150ms ease;
 }
 
 .nav-links li + li {
@@ -121,7 +161,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 84vh;
+  height: 88vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -255,6 +295,11 @@ p {
   margin: 0.5rem 0;
 }
 
+.articles .card .card-title:hover {
+  color: var(--primary-clr-lime);
+  cursor: pointer;
+}
+
 .articles .card .card-author {
   font-size: 12px;
 }
@@ -375,6 +420,10 @@ footer .footer-nav .footer-nav-items .footer-nav-item {
   font-size: 15px;
   line-height: 2.5;
   text-decoration: none;
+}
+
+footer .footer-nav .footer-nav-items .footer-nav-item:hover {
+  color: var(--primary-clr-lime);
 }
 
 .attribution {
