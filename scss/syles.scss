@@ -62,7 +62,13 @@ p {
   padding: 1rem 3rem;
   border-radius: 100vh;
 }
-
+.btn:hover {
+  background: linear-gradient(
+    to right,
+    lighten(hsl(136, 65%, 51%), 10%),
+    lighten(hsl(192, 70%, 51%), 10%)
+  );
+}
 .nav-bar-container {
   position: relative;
   z-index: 9999;
@@ -106,6 +112,13 @@ p {
         var(--primary-clr-cyan)
       );
       transition: transform 150ms ease;
+    }
+    li:hover,
+    li:focus {
+      .nav-link {
+        color: var(--primary-clr-darkBlue);
+      }
+      cursor: pointer;
     }
     li:hover::after {
       transform: scaleX(100%);
@@ -285,6 +298,11 @@ footer {
       }
     }
   }
+  .media-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .footer-logo {
     width: 139px;
     margin-bottom: 4rem;
@@ -297,6 +315,11 @@ footer {
     .media-icon {
       cursor: pointer;
       margin-right: 0.8rem;
+    }
+    .media-icon:hover {
+      path {
+        fill: var(--primary-clr-lime);
+      }
     }
   }
   .footer-nav {
