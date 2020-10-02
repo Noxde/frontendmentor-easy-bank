@@ -401,6 +401,9 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
+      .hero-title {
+        white-space: pre-line;
+      }
     }
     .hero-image {
       display: none !important;

@@ -542,6 +542,9 @@ footer .footer-nav .footer-nav-items .footer-nav-item:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .hero-section .hero-title-container .hero-title {
+    white-space: pre-line;
+  }
   .hero-section .hero-image {
     display: none !important;
   }
