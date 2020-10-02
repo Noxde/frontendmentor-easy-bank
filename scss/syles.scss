@@ -436,5 +436,16 @@ footer {
   }
   .footer-content {
     flex-direction: column;
+    .footer-logo {
+      margin: 2rem 0 !important;
+    }
+  }
+  .footer-nav {
+    flex-direction: column;
+    text-align: center;
+
+    .footer-nav-items {
+      margin: 0 !important;
+    }
   }
 }

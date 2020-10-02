@@ -587,5 +587,18 @@ footer .footer-nav .footer-nav-items .footer-nav-item:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer-content .footer-logo {
+    margin: 2rem 0 !important;
+  }
+  .footer-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer-nav .footer-nav-items {
+    margin: 0 !important;
+  }
 }
 /*# sourceMappingURL=syles.css.map */
