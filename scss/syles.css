@@ -40,8 +40,15 @@ p {
   font-size: 2em;
 }
 
-.logo {
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
+  width: 139px !important;
 }
 
 .container {
@@ -58,6 +65,7 @@ p {
   font-weight: 700;
   padding: 1rem 3rem;
   border-radius: 100vh;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -84,6 +92,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav-bar .burguer-menu {
+  display: none;
 }
 
 .nav-bar .nav-links {
@@ -167,6 +179,7 @@ p {
   position: relative;
   z-index: 1;
   background-image: url(/images/bg-intro-desktop.svg);
+  background-origin: border-box;
   background-position: 220% 70%;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -180,16 +193,13 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .hero-section .hero-image {
   position: absolute;
   top: -6rem;
   right: -6rem;
-  width: 50%;
+  width: 674.5px;
 }
 
 .hero-section .call-to-action {
@@ -243,6 +253,7 @@ p {
   margin-bottom: 1.5rem;
   font-weight: 400;
   font-size: 22px;
+  white-space: nowrap;
   color: var(--primary-clr-darkBlue);
 }
 
@@ -251,7 +262,7 @@ p {
   margin: 2rem 0;
 }
 
-.features-container .fetures-p {
+.features-container .features-p {
   max-width: 50rem;
   margin: 1.5rem 0;
 }
@@ -302,6 +313,7 @@ p {
 
 .articles .card .card-content {
   padding: 1.5rem;
+  text-overflow: ellipsis;
 }
 
 .articles .card .card-title {
@@ -466,5 +478,102 @@ footer .footer-nav .footer-nav-items .footer-nav-item:hover {
 
 .attribution a:hover {
   text-decoration: underline;
+}
+
+/** Media **/
+@media (max-width: 1064px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .nav-bar {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-links {
+    display: none !important;
+  }
+  .burguer-menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-request {
+    display: none !important;
+  }
+  .hero-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-align: center;
+  }
+  .hero-section .hero-section-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-section .hero-title-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-section .hero-image {
+    display: none !important;
+  }
+  .feature-title,
+  .features-p,
+  .features-title {
+    text-align: center;
+  }
+  .features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .feature {
+    margin-right: 0 !important;
+  }
+  .cards {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  footer {
+    height: 100% !important;
+  }
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=syles.css.map */

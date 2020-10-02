@@ -40,8 +40,11 @@ p {
   font-size: 2em;
 }
 
-.logo {
+.header-logo {
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  width: 139px !important;
 }
 
 .container {
@@ -61,6 +64,7 @@ p {
   font-weight: 700;
   padding: 1rem 3rem;
   border-radius: 100vh;
+  white-space: nowrap;
 }
 .btn:hover {
   background: linear-gradient(
@@ -82,6 +86,9 @@ p {
   height: 90px;
   justify-content: space-between;
   align-items: center;
+  .burguer-menu {
+    display: none;
+  }
   .nav-links {
     display: flex;
     height: 100%;
@@ -141,6 +148,7 @@ p {
   position: relative;
   z-index: 1;
   background-image: url(/images/bg-intro-desktop.svg);
+  background-origin: border-box;
   background-position: 220% 70%;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -148,12 +156,11 @@ p {
   display: flex;
   height: 88vh;
   align-items: center;
-  justify-content: space-between;
   .hero-image {
     position: absolute;
     top: -6rem;
     right: -6rem;
-    width: 50%;
+    width: 674.5px;
   }
   .call-to-action {
     width: max-content;
@@ -190,13 +197,14 @@ p {
     margin-bottom: 1.5rem;
     font-weight: 400;
     font-size: 22px;
+    white-space: nowrap;
     color: var(--primary-clr-darkBlue);
   }
   .feature-icon {
     width: 100px;
     margin: 2rem 0;
   }
-  .fetures-p {
+  .features-p {
     max-width: 50rem;
     margin: 1.5rem 0;
   }
@@ -231,6 +239,7 @@ p {
     font-size: 15px;
     .card-content {
       padding: 1.5rem;
+      text-overflow: ellipsis;
     }
     .card-title {
       color: var(--primary-clr-darkBlue);
@@ -352,5 +361,71 @@ footer {
   }
   a:hover {
     text-decoration: underline;
+  }
+}
+
+/** Media **/
+
+@media (max-width: 1064px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-bar {
+    align-items: center;
+  }
+  .nav-links {
+    display: none !important;
+  }
+  .burguer-menu {
+    display: flex !important;
+    align-items: center;
+  }
+  .nav-request {
+    display: none !important;
+  }
+  .hero-section {
+    // background-image: url(../images/bg-intro-mobile.svg) !important;
+    // background-position: center center;
+    // background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+
+    .hero-section-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-image {
+      display: none !important;
+    }
+  }
+
+  .feature-title,
+  .features-p,
+  .features-title {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    text-align: center;
+  }
+  .feature {
+    margin-right: 0 !important;
+  }
+  .cards {
+    flex-direction: column !important;
+  }
+  footer {
+    height: 100% !important;
+  }
+  .footer-content {
+    flex-direction: column;
   }
 }
