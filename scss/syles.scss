@@ -293,18 +293,13 @@ footer {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    .copy {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      span {
-        color: var(--neutral-clr-grayBlue);
-      }
-      .btn {
-        padding: 1rem 2rem;
-        white-space: nowrap;
-        margin-bottom: 1.5rem;
-      }
+    span {
+      color: var(--neutral-clr-grayBlue);
+    }
+    .btn {
+      padding: 1rem 2rem;
+      white-space: nowrap;
+      margin-bottom: 1.5rem;
     }
   }
   .media-logo {
@@ -350,6 +345,14 @@ footer {
         color: var(--primary-clr-lime);
       }
     }
+  }
+}
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .btn {
+    margin: 1.5rem 0;
   }
 }
 
@@ -433,8 +436,19 @@ footer {
   .cards {
     flex-direction: column !important;
   }
+  .articles {
+  }
+  .articles-content {
+    height: 90%;
+  }
+  .articles-title {
+    text-align: center;
+  }
   footer {
     height: 100% !important;
+    .copy {
+      align-items: center;
+    }
   }
   .footer-content {
     flex-direction: column;
