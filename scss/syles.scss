@@ -371,7 +371,17 @@ footer {
 
 @media (max-width: 1064px) {
   .grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    margin: 5rem auto;
+  }
+  .nav-bar.container {
+    margin: 0 auto;
+  }
+  .footer-content.container {
+    margin: 0 auto;
   }
   .nav-bar {
     align-items: center;
@@ -410,14 +420,13 @@ footer {
       }
     }
     .hero-image {
+      order: -1;
+      position: relative;
       top: -130px;
-      left: 0;
       right: 0;
-      display: block;
       width: 100%;
     }
   }
-
   .feature-title,
   .features-p,
   .features-title {
@@ -435,12 +444,12 @@ footer {
   }
   .cards {
     flex-direction: column !important;
+    .card {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
   }
-  .articles {
-  }
-  .articles-content {
-    height: 90%;
-  }
+
   .articles-title {
     text-align: center;
   }
