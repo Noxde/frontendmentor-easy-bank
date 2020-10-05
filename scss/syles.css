@@ -498,7 +498,7 @@ footer .footer-nav .footer-nav-items .footer-nav-item:hover {
 @media (prefers-color-scheme: dark) {
   :root {
     /** Primary Colors **/
-    --primary-clr-darkBlue: #cbcfe9;
+    --primary-clr-darkBlue: #fff;
     --primary-clr-lime: hsl(136, 65%, 51%);
     --primary-clr-cyan: hsl(192, 70%, 51%);
     --primary-clr-darkBlue-footer: #1f1f1f;
