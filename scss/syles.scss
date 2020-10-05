@@ -79,6 +79,9 @@ p {
   width: 100%;
   background-color: var(--neutral-clr-white);
 }
+.menu-overlay {
+  display: none;
+}
 .mobile-menu {
   display: none;
 }

@@ -80,6 +80,10 @@ p {
   background-color: var(--neutral-clr-white);
 }
 
+.menu-overlay {
+  display: none;
+}
+
 .mobile-menu {
   display: none;
 }
