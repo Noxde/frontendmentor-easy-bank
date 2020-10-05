@@ -98,7 +98,7 @@ p {
           align-items: center;
 }
 
-.nav-bar .burguer-menu {
+.nav-bar .burger-menu {
   display: none;
 }
 
@@ -551,7 +551,7 @@ footer .footer-nav .footer-nav-items .footer-nav-item:hover {
   .nav-links {
     display: none !important;
   }
-  .burguer-menu {
+  .burger-menu {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
