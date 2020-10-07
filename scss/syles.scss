@@ -46,6 +46,9 @@ p {
   align-items: center;
   cursor: pointer;
   width: 139px !important;
+  .logo-text {
+    fill: var(--primary-clr-darkBlue);
+  }
 }
 
 .container {
@@ -316,6 +319,9 @@ footer {
     width: 139px;
     margin-bottom: 4rem;
     cursor: pointer;
+    .logo-text {
+      fill: white;
+    }
   }
   .media-icons {
     display: flex;
@@ -341,7 +347,7 @@ footer {
       margin-right: 6rem;
 
       .footer-nav-item {
-        color: var(--neutral-clr-lightGrayBlue);
+        color: hsl(0, 0%, 98%);
         font-weight: 300;
         font-size: 15px;
         line-height: 2.5;
@@ -386,8 +392,8 @@ footer {
     --primary-clr-darkBlue-footer: #1f1f1f;
     /** Neutral Colors **/
     --neutral-clr-grayBlue: hsl(233, 8%, 62%);
-    --neutral-clr-lightGrayBlue: hsl(220, 16%, 96%);
-    --neutral-clr-veryLightGray: #141414;
+    --neutral-clr-lightGrayBlue: hsl(216, 8.5%, 11.6%);
+    --neutral-clr-veryLightGray: hsl(240, 2.2%, 8.8%);
     --neutral-clr-white: #1f1f1f;
   }
 }
