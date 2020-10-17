@@ -107,8 +107,20 @@ p {
           align-items: center;
 }
 
-.nav-bar .burger-menu {
+.nav-bar .burger-opened {
   display: none;
+}
+
+.nav-bar .burger-opened path {
+  fill: var(--primary-clr-darkBlue);
+}
+
+.nav-bar .burger-closed {
+  display: inline-block;
+}
+
+.nav-bar .burger-closed path {
+  fill: var(--primary-clr-darkBlue);
 }
 
 .nav-bar .nav-links {
