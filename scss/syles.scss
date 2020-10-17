@@ -102,7 +102,7 @@ p {
     }
   }
   .burger-closed {
-    display: none;
+    display: inline-block;
     path {
       fill: var(--primary-clr-darkBlue);
     }
@@ -472,9 +472,7 @@ footer {
     display: flex !important;
     align-items: center;
   }
-  .burger-closed {
-    display: inline-block !important;
-  }
+
   .nav-request {
     display: none !important;
   }
