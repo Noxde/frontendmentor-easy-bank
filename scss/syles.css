@@ -116,7 +116,7 @@ p {
 }
 
 .nav-bar .burger-closed {
-  display: inline-block;
+  display: none;
 }
 
 .nav-bar .burger-closed path {
@@ -602,6 +602,9 @@ footer .footer-nav .footer-nav-items .footer-nav-item:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .burger-closed {
+    display: inline-block !important;
   }
   .nav-request {
     display: none !important;
