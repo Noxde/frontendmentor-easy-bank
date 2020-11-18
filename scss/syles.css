@@ -528,6 +528,11 @@ footer .footer-nav .footer-nav-items .footer-nav-item:hover {
 }
 
 @media (max-width: 1064px) {
+  .nav-bar-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
   .grid {
     display: -webkit-box;
     display: -ms-flexbox;

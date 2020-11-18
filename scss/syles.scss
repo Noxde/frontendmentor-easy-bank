@@ -412,6 +412,10 @@ footer {
 }
 
 @media (max-width: 1064px) {
+  .nav-bar-container {
+    position: sticky;
+    top: 0;
+  }
   .grid {
     display: flex;
     flex-direction: column;
