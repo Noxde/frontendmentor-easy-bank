@@ -5,7 +5,7 @@ let overlay = document.getElementById("menu-overlay");
 
 function BurgerMenu() {
   let compStyle = getComputedStyle(burgerClosed);
-  let style = compStyle.getPropertyValue('display');
+  let style = compStyle.getPropertyValue("display");
   switch (style) {
     case "block":
       burgerClosed.style.display = "none";
@@ -14,9 +14,18 @@ function BurgerMenu() {
       overlay.style.display = "block";
       break;
     case "none":
-          burgerOpened.style.display = "none";
-          burgerClosed.style.display = "block";
-          mobileMenu.style.display = "none";
-          overlay.style.display = "none";
+      burgerOpened.style.display = "none";
+      burgerClosed.style.display = "block";
+      mobileMenu.style.display = "none";
+      overlay.style.display = "none";
   }
 }
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1063) {
+    burgerOpened.style.display = "none";
+    burgerClosed.style.display = "block";
+    mobileMenu.style.display = "none";
+    overlay.style.display = "none";
+  }
+});

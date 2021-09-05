@@ -643,6 +643,7 @@ footer .footer-nav .footer-nav-items .footer-nav-item:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: -5rem;
   }
   .hero-section .hero-title-container {
     display: -webkit-box;
